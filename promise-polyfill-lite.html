@@ -9,14 +9,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <script src='./Promise.js'></script>
 <script>
-if (!window.Promise) {
-  var asap;
-  if (window.Polymer) {
-    asap = Polymer.base.async;
-  } else {
-    asap = setTimeout;
-  }
+(function() {
+  if (!window.Promise) {
+    var asap;
+    if (window.Polymer) {
+      asap = Polymer.base.async;
+    } else {
+      asap = setTimeout;
+    }
 
-  window.Promise = MakePromise(asap);
-}
+    window.Promise = MakePromise(asap);
+  }
+})()
 </script>
