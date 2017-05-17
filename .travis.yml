@@ -10,4 +10,8 @@ addons:
     packages:
       - google-chrome-stable
 env:
-  global: []
+  global:
+    - secure: >-
+        AU0L3cT+kUACZf7nJ1F0v1/Th4PErA1DltLTDAhxdo0Mqgt8NASQMpDd/WUKIUpc8M1bG0Th9Oyd+Kvsdm+6oLvNSfSwemC1e5oxns3wmdmRxiZ1s2L2XR8yOu1OsR2n61MYO/qatncMHd6eYwfMYo/Lgx/Zh/H7zbv8TNEe/rc=
+    - secure: >-
+        hcptQOjEeSXPTiQhCaHzEcWhN8QysaWcoqKCIgs+3uqR+p8O2zctDLG/pTFXE1tR23uFJyScIeZAdfMpDU0VLqxL/Miqcuv8g+wS0ygnHb+7+7lC3MOTSvwSTshxz8PUsbHQ5ig336mGZKENleCRdC7SevxVkdZUzVQ2pL6LVVs=
