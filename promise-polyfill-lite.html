@@ -12,11 +12,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 (function() {
   if (!window.Promise) {
     var asap;
+
     if (window.Polymer) {
-      asap = Polymer.Base.async;
-    } else {
-      asap = setTimeout;
+      // available in polymer 1 or hybrid
+      if (Polymer.Async) {
+        asap = Polymer.Base.async;
+
+      // available in polymer 2
+      } else if (Polymer.Base) {
+        asap = polymer.Async.microtask.run;
+      }
     }
+
+    asap = asap || window.setTimeout;
 
     window.Promise = MakePromise(asap);
   }
