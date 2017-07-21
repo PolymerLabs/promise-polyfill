@@ -15,11 +15,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     if (window.Polymer) {
       // available in polymer 1 or hybrid
-      if (Polymer.Async) {
+      if (Polymer.Base) {
         asap = Polymer.Base.async;
 
       // available in polymer 2
-      } else if (Polymer.Base) {
+      } else if (Polymer.Async) {
         asap = polymer.Async.microtask.run;
       }
     }
