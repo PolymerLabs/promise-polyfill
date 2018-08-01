@@ -1,16 +1,16 @@
-
-<!---
-
-This README is automatically generated from the comments in these files:
-
-
-Edit those files, and our readme bot will duplicate them over here!
-Edit this file, and the bot will squash your changes :)
-
-The bot does some handling of markdown. Please file a bug if it does the wrong
-thing! https://github.com/PolymerLabs/tedium/issues
-
--->
+# promise-polyfill
 
 [![Build status](https://travis-ci.org/PolymerLabs/promise-polyfill.svg?branch=master)](https://travis-ci.org/PolymerLabs/promise-polyfill)
 
+An HTML import based polyfill for ES6 Promises based on
+[taylorhikes/promise-polyfill](https://github.com/taylorhakes/promise-polyfill).
+
+**This library is deprecated.** Please see the following alternatives:
+
+- If you already depend on the
+  [webcomponentsjs](https://github.com/webcomponents/webcomponentsjs) polyfills
+  version 1.0 or higher (as most Polymer users do), then you do not need a
+  standalone Promise polyfill, because one is already included.
+
+- If you need a standalone Promise polyfill, see
+  [taylorhikes/promise-polyfill](https://github.com/taylorhakes/promise-polyfill).
