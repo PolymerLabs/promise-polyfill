@@ -1,7 +1,5 @@
 # promise-polyfill
 
-[![Build status](https://travis-ci.org/PolymerLabs/promise-polyfill.svg?branch=master)](https://travis-ci.org/PolymerLabs/promise-polyfill)
-
 An HTML import based polyfill for ES6 Promises based on
 [taylorhikes/promise-polyfill](https://github.com/taylorhakes/promise-polyfill).
 
